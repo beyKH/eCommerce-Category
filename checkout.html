@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="h-100 d-flex flex-column ">
+  <div class="container-xl">
+
+    <!-- BREADCRUMB -->
+    <div aria-label="breadcrumb bg-white">
+      <ol class="breadcrumb bg-white">
+        <li class="breadcrumb-item"><a class="text-secondary breadcrumb-text" href="#">Home</a></li>
+        <li class="breadcrumb-item active"><a class="text-dark breadcrumb-text" href="#">Library</a></li>
+      </ol>
+    </div>
+
+    <h1 class="sr-only">Order</h1>
+
+    <!-- FORM -->
+    <form method="POST" action="https://echo.htmlacademy.ru" >
+      <div class="form-group">
+
+        <div class="bill-wrapper row ">
+
+          <div class="bill-wrapper__left col-md-6">
+
+            <!-- BILLING INFO -->
+            <section class="bill-info mb-5">
+              <!-- BILLING INFO TOP -->
+              <div class="bill-info__top mb-3">
+                <h2 class="h4">Billing info</h2>
+                <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                  <p class="bill-info__text mr-2">Please enter your billing info</p>
+                  <p class="bill-info__steps">Step 1 of 5</p>
+                </div>
+              </div>
+              <!-- BILL INFO CENTER -->
+              <div class="bill-info__center">
+                <!--FIRST NAME AND LAST NAME -->
+                <div class="row mb-4">
+                  <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                    First name
+                    <input class="form-control d-block w-100" name="first-name" placeholder="First name"
+                    aria-label="First name">
+                  </div>
+                  <div class="input-group col-sm-6 font-weight-bolder">
+                    Lat name
+                    <input class="form-control d-block w-100" name="last-name" placeholder="Last name"
+                    aria-label="Lastname">
+                  </div>
+                </div>
+                <!--EMAIL ADRESS AND PHONE NUMBER-->
+                <div class="row mb-4">
+                  <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                    Email adress
+                    <input class="form-control d-block w-100" type="email" name="Email addess" placeholder="Email addess"
+                    aria-label="Email addess">
+                  </div>
+                  <div class="input-group col-sm-6 font-weight-bolder">
+                    Phone number
+                    <input class="form-control d-block w-100" type="tel" name="Phone number" placeholder="Phone number"
+                    aria-label="Phone number">
+                  </div>
+                </div>
+                <!-- ADRESS AND TOWN-->
+                <div class="row mb-4">
+                  <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                    Address
+                    <input class="form-control d-block w-100" type="text" name="Adress" placeholder="Adress"
+                    aria-label="Adress">
+                  </div>
+                  <div class="input-group col-sm-6 font-weight-bolder">
+                    Town / City
+                    <input class="form-control d-block w-100" name="Town or city" placeholder="Town or city"
+                    aria-label="Town or city">
+                  </div>
+                </div>
+                <!-- State / Country AND ZIP CODE-->
+                <div class="row mb-4">
+                  <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                    State / Country
+                    <select class="form-select form-control d-block w-100" id="inputGroupSelect01">
+                      <option selected>Choose a state or Country</option>
+                      <option value="1">Uzbekistan</option>
+                      <option value="2">England</option>
+                      <option value="3">USA</option>
+                    </select>
+                  </div>
+                  <div class="input-group col-sm-6 font-weight-bolder">
+                    ZIP/Postal code
+                    <input class="form-control d-block w-100" name="Postal code or ZIP" placeholder="Postal code or ZIP"
+                    aria-label="Postal code or ZIP">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group mb-3 col-sm-6">
+                    <div class="input-group-text">
+                      <input class="form-check-input mt-0 " type="checkbox" value=""
+                        aria-label="Checkbox for following text input">
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ship to a different address?"
+                      aria-label="Text input with checkbox">
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bill-method mb-5">
+              <!-- BILLING METHOD TOP -->
+              <div class="bill-info__top mb-3">
+                <h2 class="h4">Billing method</h2>
+                <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                  <p class="bill-info__text mr-2">Please enter your payment method</p>
+                  <p class="bill-info__steps">Step 2 of 5</p>
+                </div>
+              </div>
+              <div class="input-group form-control mb-3 d-flex align-items-center justify-content-between flex-wrap">
+                <label class="mb-0 mr-2">
+                  <input class="payment-method sr-only" type="checkbox">
+                  <span class="payment-method__type">FedEx</span>
+                </label>
+                <span class="d-blcok mr-2 payment-method-fee"><span class="text-success">+32 USD</span> Additional
+                  price</span>
+                <img src="img/fedex.png" width="54" height="16" alt="">
+              </div>
+              <div class="input-group form-control mb-0 d-flex align-items-center justify-content-between flex-wrap">
+                <label class="mb-0 mr-2">
+                  <input class="payment-method sr-only" type="checkbox">
+                  <span class="payment-method__type">FedEx</span>
+                </label>
+                <span class="d-blcok mr-2 payment-method-fee"><span class="text-success">+15 USD</span> Additional
+                  price</span>
+                <img src="img/dhl.png" width="70" height="16" alt="">
+              </div>
+            </section>
+
+             <section class="payment-method mb-5">
+
+               <!-- Payment method  TOP -->
+               <div class="bill-info__top mb-3">
+                 <h2 class="h4">Payment method</h2>
+                 <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                   <p class="bill-info__text mr-2">Please enter your billing info</p>
+                   <p class="bill-info__steps">Step 3 of 5</p>
+                 </div>
+               </div>
+
+               <!-- PAYMENT METHODS -->
+               <div class="payment-method__box border p-3">
+
+                <!-- VISA -->
+                <div class="input-group form-control mb-3 d-flex align-items-center justify-content-between flex-wrap">
+                  <label class="mb-0 mr-2">
+                    <input class="payment-method sr-only" type="checkbox">
+                    <span class="payment-method__type">Credit card</span>
+                  </label>
+
+                  <img src="img/visacard.png" width="94" height="20" alt="visa">
+                </div>
+
+                <!-- PAYPAL -->
+                <div class="input-group form-control mb-3 d-flex align-items-center justify-content-between flex-wrap">
+                  <label class="mb-0 mr-2">
+                    <input class="payment-method sr-only" type="checkbox">
+                    <span class="payment-method__type">Paypal</span>
+                  </label>
+
+                  <img src="img/paypal.svg" width="75" height="18" alt="visa">
+                </div>
+
+                <!-- BITCOIN -->
+                <div class="input-group form-control mb-3 d-flex align-items-center justify-content-between flex-wrap">
+                  <label class="mb-0 mr-2">
+                    <input class="payment-method sr-only" type="checkbox">
+                    <span class="payment-method__type">Bitcoin</span>
+                  </label>
+
+                  <img src="img/bitcoin.svg" width="75" height="16" alt="visa">
+                </div>
+
+
+               </div>
+
+
+
+             </section>
+
+             <section class="additional-method mb-5">
+
+               <!-- Additional method  TOP -->
+               <div class="bill-info__top mb-3">
+                 <h2 class="h4">Additional informations</h2>
+                 <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                   <p class="bill-info__text mr-2">Need something else? We will make it for you!</p>
+                   <p class="bill-info__steps">Step 4 of 5</p>
+                 </div>
+               </div>
+
+               <div class="additional-method__box ">
+                 <h3 class="h6">Order notes</h3>
+
+                <div class="form-floating">
+                  <textarea class="form-control additional-text" name="textarea"
+                    placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."
+                    id="floatingTextarea"></textarea>
+                </div>
+               </div>
+             </section>
+
+             <section class="confirmation mb-5">
+
+               <!-- Confirmation  TOP -->
+               <div class="bill-info__top mb-3">
+                 <h2 class="h4">Confirmation</h2>
+                 <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                   <p class="bill-info__text mr-2">We are getting to the end. Just few clicks and your order si ready!</p>
+                   <p class="bill-info__steps">Step 5 of 5</p>
+                 </div>
+
+               </div>
+
+               <div class="px-3 py-2 border rounded mb-3 d-flex align-items-center ">
+
+                   <input class="payment-method " type="checkbox">
+                   <span class="confirmation-input">I agree with sending an Marketing and newsletter emails. No spam,
+                     promissed!</span>
+
+
+               </div>
+
+               <div class="px-3 py-2 border rounded mb-3 d-flex align-items-center ">
+
+                   <input class="payment-method " type="checkbox">
+                   <span class="confirmation-input">I agree with our terms and conditions and privacy policy.</span>
+
+
+               </div>
+
+               <button class="btn btn-success" type="submit">Complete order</button>
+
+
+              </section>
+            </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </form>
+
+
+</div>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
