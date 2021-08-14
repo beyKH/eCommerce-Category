@@ -165,28 +165,65 @@
               Compare</button>
           </div>
 
-          .<ul class="nav nav-tabs" id="myTab" role="tablist">
+          <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Home</a>
+                aria-selected="true">Description</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Profile</a>
+                aria-selected="false">Description <span class="badge badge-success rounded-pill">18</span></a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                aria-selected="false">Contact</a>
+                aria-selected="false">Questions <span class="badge badge-success rounded-pill">4</span></a>
             </li>
           </ul>
-          <div class="tab-content mb-4" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">We work hard to
-              ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.
+          <div class="tab-content mb-5" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+              <h3 class="h6">Origins</h3>
+              <p class="mb-3">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.
+              </p>
+
+              <h3 class="h6">How to cook</h3>
+              <p>From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+
+
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
+
+              <h3 class="h6">Origins</h3>
+              <p class="mb-3">We work hard to ensure that the fruit and vegetables we sell are fresh and high in
+                quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to
+                buy locally whenever possible.
+              </p>
+
+              <h3 class="h6">How to cook</h3>
+              <p>From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour
+                to an enormous number of recipes.</p>
+
+
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.</div>
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="home-tab">
+
+              <h3 class="h6">Origins</h3>
+              <p class="mb-3">We work hard to ensure that the fruit and vegetables we sell are fresh and high in
+                quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to
+                buy locally whenever possible.
+              </p>
+
+              <h3 class="h6">How to cook</h3>
+              <p>From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour
+                to an enormous number of recipes.</p>
+
+
+            </div>
+
+
           </div>
 
           <div class="product-table">
@@ -222,6 +259,79 @@
 
 
       </div>
+
+
+      <div class=" d-flex flex-wrap align-items-center justify-content-between my-4">
+        <h3 class="h6 mr-sm-2">Related products</h3>
+        <a class="text-dark font-weight-bolder d-inline-flex align-items-center h6" href="#">More products
+          <svg class="ml-2" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.5332 8.18663L4.2732 5.44663C4.39737 5.32172 4.46706 5.15276 4.46706 4.97663C4.46706 4.80051 4.39737 4.63154 4.2732 4.50663L1.60654 1.83997"
+              stroke="#6A983C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel" />
+          </svg>
+
+        </a>
+      </div>
+
+      <ul class="row list-unstyled">
+
+        <li class="col-sm-6 mb-3 mb-md-4 col-md-4 col-lg-3 ">
+          <div class="card card-related p-3 p-lg-2 rounded-lg">
+            <img class="w-100 rounded-lg mb-3"  src="https://picsum.photos/235/180/?random=2" width="235" height="180" alt="img">
+
+            <h3 class="h6 mb-2">Product title</h3>
+            <p style="font-size: 12px;">Lorem ipsum dolor sit amet.</p>
+
+            <div class="related-price-wrapper d-flex justify-content-between align-items-center">
+              <span class="d-block font-weight-bold">3.26 USD</span>
+              <button class="btn btn-success rounded-lg">Buy now</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-sm-6 mb-3 mb-md-4 col-md-4 col-lg-3">
+          <div class="card card-related p-3 p-lg-2 rounded-lg">
+            <img class="w-100 rounded-lg mb-3"  src="https://picsum.photos/235/180/?random=2" width="235" height="180" alt="img">
+
+            <h3 class="h6 mb-2">Product title</h3>
+            <p style="font-size: 12px;">Lorem ipsum dolor sit amet.</p>
+
+            <div class="related-price-wrapper d-flex justify-content-between align-items-center">
+              <span class="d-block font-weight-bold">3.26 USD</span>
+              <button class="btn btn-success rounded-lg">Buy now</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-sm-6 mb-3 mb-md-4 col-md-4 col-lg-3">
+          <div class="card card-related p-3  p-lg-2 rounded-lg">
+            <img class="w-100 rounded-lg mb-3"  src="https://picsum.photos/235/180/?random=2" width="235" height="180" alt="img">
+
+            <h3 class="h6 mb-2">Product title</h3>
+            <p style="font-size: 12px;">Lorem ipsum dolor sit amet.</p>
+
+            <div class="related-price-wrapper d-flex justify-content-between align-items-center">
+              <span class="d-block font-weight-bold">3.26 USD</span>
+              <button class="btn btn-success rounded-lg">Buy now</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-sm-6 mb-3 mb-md-4 col-md-4 col-lg-3">
+          <div class="card card-related p-3 p-lg-2 rounded-lg">
+            <img class="w-100 rounded-lg mb-3"  src="https://picsum.photos/235/180/?random=2" width="235" height="180" alt="img">
+
+            <h3 class="h6 mb-2">Product title</h3>
+            <p style="font-size: 12px;">Lorem ipsum dolor sit amet.</p>
+
+            <div class="related-price-wrapper d-flex justify-content-between align-items-center">
+              <span class="d-block font-weight-bold">3.26 USD</span>
+              <button class="btn btn-success rounded-lg">Buy now</button>
+            </div>
+          </div>
+        </li>
+
+      </ul>
 
     </div>
 
