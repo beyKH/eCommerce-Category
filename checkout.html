@@ -46,24 +46,24 @@
                 <div class="row mb-4">
                   <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
                     First name
-                    <input class="form-control d-block w-100" name="first-name" placeholder="First name"
+                    <input class="form-control d-block w-100" name="first_name" placeholder="First name"
                     aria-label="First name">
                   </div>
                   <div class="input-group col-sm-6 font-weight-bolder">
                     Last name
-                    <input class="form-control d-block w-100" name="last-name" placeholder="Last name">
+                    <input class="form-control d-block w-100" name="last_name" placeholder="Last name">
                   </div>
                 </div>
                 <!--EMAIL ADRESS AND PHONE NUMBER-->
                 <div class="row mb-4">
                   <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
                     Email adress
-                    <input class="form-control d-block w-100" type="email" name="Email addess" placeholder="Email addess"
+                    <input class="form-control d-block w-100" type="email" name="email" placeholder="Email addess"
                     aria-label="Email addess">
                   </div>
                   <div class="input-group col-sm-6 font-weight-bolder">
                     Phone number
-                    <input class="form-control d-block w-100" type="tel" name="Phone number" placeholder="Phone number"
+                    <input class="form-control d-block w-100" type="tel" name="phone_number" placeholder="Phone number"
                     aria-label="Phone number">
                   </div>
                 </div>
@@ -84,7 +84,7 @@
                 <div class="row mb-4">
                   <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
                     State / Country
-                    <select class="form-select form-control d-block w-100" id="inputGroupSelect01">
+                    <select class="form-select form-control d-block w-100" id="inputGroupSelect01" name="country">
                       <option selected>Choose a state or Country</option>
                       <option value="1">Uzbekistan</option>
                       <option value="2">England</option>
@@ -100,10 +100,10 @@
                 <div class="row">
                   <div class="input-group mb-3 col-sm-6">
                     <div class="input-group-text">
-                      <input class="form-check-input mt-0 " type="checkbox" value=""
+                      <input class="form-check-input mt-0" name="delivery" type="checkbox" value="1"
                       aria-label="Checkbox for following text input">
                     </div>
-                    <input type="text" class="form-control" placeholder="Ship to a different address?"
+                    <input type="text" class="form-control" name="delivery" value="2" placeholder="Ship to a different address?"
                     aria-label="Text input with checkbox">
                   </div>
                 </div>
@@ -140,7 +140,7 @@
 
               <div class="billing-method__box">
                 <label class="billing-method__label">
-                  <input class="" type="radio" value="1" name="asd-1">
+                  <input class="" type="radio" value="1" name="payment">
                   <span class="d-blcok mr-2 payment-method-fee"><span class="text-success">+32 USD</span> Additional
                   price</span>
                   <img src="img/fedex.png" width="54" height="16" alt="fedex">
@@ -148,7 +148,7 @@
               </div>
               <div class="billing-method__box">
                 <label class="billing-method__label">
-                  <input class="" type="radio" value="1" name="asd-2">
+                  <input class="" type="radio" value="2" name="payment">
                   <span class="d-blcok mr-2 payment-method-fee">
                     <span class="text-success">+15 USD</span> Additional
                     price</span>
